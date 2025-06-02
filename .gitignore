@@ -1,0 +1,8 @@
+# Ignore all hidden folders
+.*/
+# But allow .git directory (important for git to function)
+!.git/
+
+# Ignore specific folders
+.settings/
+bin/
