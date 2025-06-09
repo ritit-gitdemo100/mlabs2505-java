@@ -18,6 +18,7 @@ public class ATM6 {
 			System.out.println("Withdrawal Seecessful, Remaining balance is "+balance);
 			
 		}
+		
 		catch(IllegalArgumentException | InsufficientBalanceException e) {
 			System.out.println("Error : "+e.getMessage());
 		}

@@ -1,0 +1,29 @@
+Optional Class
+===============
+	
+	What is NullPointerException?
+		When we don't initialize a reference variable, 
+		a special value null is assigned to them.
+		
+		And when we try to use that UNINITIALIZED reference variable
+		it throws NullPointerException
+		
+		
+	In Java 8, the Optional class which provides an easier way to avoid 
+	the NullPointerException was introduced.
+	Optional class is a final class and is in java.util package
+	It helps in writing neat and more readable code without using too many null checks.
+	By using Optional instance,
+		we can specify alternate values to return
+		or alternate code to run
+		
+	Optional instance: A container object which may or maynot contain a non-null value
+	
+	
+	Different ways of using Optional class
+		1. Get the value
+		2. Get if object is non-null, else throw exception
+		3. Get if object is non-null, else return default
+		4. Consume if it is not null
+		
+		
