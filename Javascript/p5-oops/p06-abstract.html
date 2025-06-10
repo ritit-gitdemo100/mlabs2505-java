@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        class Department {
+            constructor(name) {
+                this.name = name;
+            }
+
+            hireEmployee(name, position) {
+                console.log(`Hiring ${name} for the ${this.name} department as a ${position}.`);
+                // Other complex operations can be hidden here, like creating employee records.
+            }
+        }
+
+        class Employee {
+            constructor(name, position) {
+                this.name = name;
+                this.position = position;
+            }
+
+            joinDepartment(department) {
+                department.hireEmployee(this.name, this.position);
+            }
+        }
+
+        const engineering = new Department("Engineering");
+        const employee4 = new Employee("Mark Smith", "Software Engineer");
+
+        employee4.joinDepartment(engineering);
+        // Output:
+        // Hiring Mark Smith for the Engineering department as a Software Engineer.
+
+    </script>
+</body>
+
+</html>

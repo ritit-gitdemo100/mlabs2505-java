@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+
+        // Spread Operator (...): 
+        // Spreads elements from an array or object into individual elements.
+
+        const arr1 = [1, 2, 3];
+        const arr2 = [4, 5, 6];
+
+        const combinedArr = [...arr1, ...arr2];
+        console.log(combinedArr); // [1, 2, 3, 4, 5, 6]
+
+        const obj1 = { name: "Alice", age: 25 };
+        const obj2 = { city: "New York" };
+
+        const combinedObj = { ...obj1, ...obj2 };
+        console.log(combinedObj); // { name: 'Alice', age: 25, city: 'New York' }
+
+    </script>
+</body>
+
+</html>

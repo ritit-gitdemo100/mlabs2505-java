@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    
+    <h1>DOM Methods</h1>
+    <p id="p1">My Paragraph</p>
+    <button id="btn">Change Text</button>
+
+    <script>
+        const para = document.getElementById("p1");
+        const btn = document.getElementById("btn");
+
+        function changeText(){
+            para.innerText = "Hey Im updated";
+        }
+
+        btn.addEventListener('click',changeText);
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+        function example() {
+            if (true) {
+                var x = 10;
+                let y = 20;
+                const z = 30;
+            }
+            document.write(x); // 10 (accessible because var is function-scoped)
+            document.write(y); // ReferenceError: (let is block-scoped)
+            document.write(z); // ReferenceError:  (const is block-scoped)
+        }
+        example();
+
+    </script>
+</body>
+
+</html>

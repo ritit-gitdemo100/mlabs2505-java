@@ -1,0 +1,28 @@
+CSS - Cascading Style Sheet
+To style the elements created by HTML
+
+Ways to style the elements
+1. inline style
+2. internal style
+3. external style
+
+selector
+    to identify the element to be styled
+
+    0. Element/Tag/Name Selector (p)
+    1. Universal Selector (*)
+    2. Id (#)
+    3. Class (.)
+    4. Group (,)
+    5. Descendant ( )
+    6. Child (>)
+    7. Attribute ([href])
+    8. Pseudo Class (:)
+    9. Pseudo Element (::)
+
+properties
+    what to be styled on that selected element
+    key:value pairs
+    
+
+    

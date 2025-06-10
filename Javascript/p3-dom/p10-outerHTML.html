@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>outerHTML Example</title>
+</head>
+<body>
+
+    <div id="myElement">
+        <h1>Original Heading</h1>
+        <p>This is some paragraph text.</p>
+    </div>
+
+    <button onclick="changeElement()">Change Element</button>
+
+    <script>
+        function changeElement() {
+            const element = document.getElementById('myElement');
+            element.outerHTML = "<section><h2>New Section Heading</h2><p>New paragraph in a section.</p></section>";
+        }
+    </script>
+
+</body>
+</html>

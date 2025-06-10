@@ -1,0 +1,21 @@
+TypeScript Types
+
+    1. Static 
+        a. Built-in (or) Primitive Types
+            Number,
+            Void,
+            String,
+            Null,
+            Boolean
+
+        b. User-Defined
+            Array
+            Class
+            Tuple
+            Enum
+            Function
+            Interface
+
+    2. Generics
+
+    3. Decorators

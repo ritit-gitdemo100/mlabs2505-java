@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    
+    <h1>DOM Methods</h1>
+    <p id="p1">Welcome to DOM Event Handling</p>
+
+    <script>
+        const para = document.getElementById("p1");
+
+        para.addEventListener('mouseover',function (){
+            para.innerText = "Thank you !!!";
+        });
+
+        para.addEventListener('mouseout',function (){
+            para.textContent = "Welcome to DOM Event Handling";
+        });
+
+    </script>
+</body>
+</html>

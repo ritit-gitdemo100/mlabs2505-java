@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        span {
+            color:red;
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        function clearMsg(){
+            document.getElementById("err_uname").innerText = "";
+        }
+        function validate(){
+            var userName = document.getElementById("uname").value;
+            var len = userName.length;
+            if(len<5 || len>10)
+                document.getElementById("err_uname").innerText = "Invalid Username";
+            else
+                document.getElementById("err_uname").innerText = "Valid Username";
+        }
+    </script>
+</head>
+<body>
+    Username :  
+    <input type="text" id="uname" onfocus="clearMsg()"/> 
+    <span id="err_uname"></span> <br>
+
+    <button onclick="validate()">Validate</button>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        class Employee {
+            #salary; // Private field
+
+            constructor(name, position, department, salary) {
+                this.name = name;
+                this.position = position;
+                this.department = department;
+                this.#salary = salary; // Private property
+            }
+
+            getSalary() {
+                return this.#salary;
+            }
+
+            setSalary(newSalary) {
+                if (newSalary < 0) {
+                    console.log("Salary cannot be negative.");
+                } else {
+                    this.#salary = newSalary;
+                }
+            }
+
+            displayInfo() {
+                console.log(`Name: ${this.name}`);
+                console.log(`Position: ${this.position}`);
+                console.log(`Department: ${this.department}`);
+                console.log(`Salary: $${this.#salary}`);
+            }
+        }
+
+        // Create an Employee object with private salary
+        const employee2 = new Employee("Alice Turner", "Developer", "Engineering", 70000);
+        employee2.displayInfo();
+        // Output:
+        // Name: Alice Turner
+        // Position: Developer
+        // Department: Engineering
+        // Salary: $70000
+        employee2.setSalary(80000);
+        console.log(employee2.getSalary()); // 80000
+
+    </script>
+</body>
+
+</html>

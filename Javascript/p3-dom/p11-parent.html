@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <div id="parent">
+        <p id="first">First paragraph.</p>
+        <p id="second">Second paragraph.</p>
+        <p id="third">Third paragraph.</p>
+    </div>
+
+    <button onclick="navigateDOM()">Click to Navigate DOM</button>
+
+    <script>
+        function navigateDOM() {
+            // Getting the first paragraph element
+            let fp = document.getElementById('first');
+
+            // Next sibling of the first paragraph
+            //let sp = fp.nextSibling.; this may result text node space or line break
+            let sp = fp.nextElementSibling;
+            console.log("Next sibling : ", sp  );
+
+            // Previous sibling of the first paragraph
+            //let ps = sp.previousSibling;
+            let ps = sp.previousElementSibling
+            console.log("Previous sibling : ", ps ? ps.textContent : "None");
+
+            
+            // Parent node of the first paragraph
+            let parent = fp.parentNode;
+            console.log("Parent: ", parent);
+
+            // Child nodes of the parent element
+            let childNodes = parent.childNodes;
+            console.log("Child nodes:", childNodes);
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+
+        //set default values for destructed properties:
+
+        const person = {
+            name: "Bob" //, age : 50
+        };
+
+        const { name, age = 25 } = person;
+
+        console.log(name);  // "Bob"
+        console.log(age);   // 25 (default value)
+
+    </script>
+</body>
+
+</html>

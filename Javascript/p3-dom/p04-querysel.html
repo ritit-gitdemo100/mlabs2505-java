@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <h1 id="main-heading">Hello, JavaScript!</h1>
+    <p class="text">This is a paragraph.</p>
+    <p class="text">This is another paragraph.</p>
+
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+        function changeText() {
+
+            const heading = document.querySelector('#main-heading');
+            heading.textContent = 'Text has been changed!';
+
+            const firstParagraph = document.querySelector('.text');
+            firstParagraph.textContent = 'This is the updated first paragraph!';
+        }
+    </script>
+
+</body>
+</html>

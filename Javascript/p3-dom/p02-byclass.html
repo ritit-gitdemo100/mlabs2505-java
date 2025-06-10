@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        p {
+            background-color: cyan;
+        }
+    </style>
+    <script>
+        function changeColor(){
+            //const para = document.getElementsByTagName("p");
+
+            const para = document.getElementsByClassName("p1");
+            for(let index in para)
+                para[index].style.backgroundColor = 'yellow';
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p>Para1</p>
+        <p class="p1">Para2</p>
+        <p>Para3</p>
+        <p class="p1">Para4</p>
+        <p>Para5</p>
+    </div>
+    <button onclick="changeColor()">Change color</button>
+</body>
+</html>

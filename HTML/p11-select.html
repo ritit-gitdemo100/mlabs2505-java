@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements with Attributes</title>
+</head>
+<body>
+
+    <h1>Form Elements with Various Attributes</h1>
+
+    <form action="#">
+  
+        
+          <!-- Select drop-down list with name, multiple, size, and required -->
+          <label for="fruit">Choose your favorite fruits (Single Selection):</label><br>
+          <select id="fruit" name="fruit">
+              <option value="apple">Apple</option>
+              <option value="banana">Banana</option>
+              <option value="cherry" selected>Cherry</option>
+              <option value="date">Date</option>
+              <option value="elderberry" disabled>Elderberry (disabled)</option>
+          </select><br><br>
+          
+        <!-- Select drop-down list with name, multiple, size, and required -->
+        <label for="fruit">Choose your favorite fruits (Required, Multiple Selection):</label><br>
+        <select id="fruit" name="fruit" multiple size="4">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="cherry" selected>Cherry</option>
+            <option value="date">Date</option>
+            <option value="elderberry" disabled>Elderberry (disabled)</option>
+        </select><br><br>
+
+  
+
+        <!-- Submit button -->
+        <button type="submit"> Submit </button>
+    </form>
+
+</body>
+</html>

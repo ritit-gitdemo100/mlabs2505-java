@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Dynamic Content Creation</h1>
+
+    <input placeholder="Add a task" id="task" />
+    <button onclick="addTask()">Add </button>
+
+    <h3>Task List</h3>
+    <ul id="tasklist">
+
+    </ul>
+    <script>
+        function addTask() {
+
+            const textInput = document.getElementById("task").value;
+            const li = document.createElement('li');
+            const text = document.createTextNode(textInput+" ");
+            li.appendChild(text);
+
+            /* New Content for remove child */
+            // Create the Remove button
+            const removeBtn = document.createElement('button');
+            removeBtn.textContent = 'Remove';
+            removeBtn.onclick = function () {
+                li.remove(); // Remove the <li> element
+            };
+
+            li.appendChild(removeBtn); // Add the button to the <li>
+            /* New content for remove Child ends here */
+
+            document.getElementById("tasklist").appendChild(li);
+
+            document.getElementById("task").value = "";
+            document.getElementById("task").focus();
+        }
+    </script>
+
+</body>
+
+</html>

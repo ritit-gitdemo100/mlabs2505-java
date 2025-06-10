@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function check(){
+            var age = parseInt(document.
+            getElementById("el_age").value);
+
+            if(age < 0 || age > 110)
+                alert('Invalid Age');
+            else if(age < 18)
+                alert('Not Eligible to Vote');
+            else
+                alert("eligible to Vote");
+        }
+    </script>
+</head>
+<body>
+    <label>Enter your Age : </label>
+    <input type="text" id="el_age">
+    <br><br>
+    <button onclick="check()">Check Eligibility</button>
+</body>
+</html>

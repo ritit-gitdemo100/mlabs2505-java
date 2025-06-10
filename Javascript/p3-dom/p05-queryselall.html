@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+
+    <h1 class="heading">Hello, JavaScript!</h1>
+    <p class="text">This is the first paragraph.</p>
+    <p class="text">This is the second paragraph.</p>
+    <p class="text">This is the third paragraph.</p>
+
+    <button onclick="changeText()">Change Text</button>
+
+    <script>
+        function changeText() {
+            const paragraphs = document.querySelectorAll('.text');
+
+            paragraphs.forEach(function(paragraph, index) {
+                paragraph.textContent = `This is the updated paragraph ${index + 1}!`;
+            });
+        }
+    </script>
+
+</body>
+</html>

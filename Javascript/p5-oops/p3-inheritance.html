@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+
+        class Employee {
+            constructor(name, position, department) {
+                this.name = name;
+                this.position = position;
+                this.department = department;
+            }
+
+            displayInfo() {
+                console.log(`Name: ${this.name}`);
+                console.log(`Position: ${this.position}`);
+                console.log(`Department: ${this.department}`);
+            }
+        }
+        class Manager extends Employee {
+            constructor(name, position, department, teamSize) {
+                super(name, position, department); // Call the parent class constructor
+                this.teamSize = teamSize;
+            }
+
+            displayInfo() {
+                super.displayInfo(); // Call the parent class method
+                console.log(`Team Size: ${this.teamSize}`);
+            }
+
+            manageTeam() {
+                console.log(`${this.name} is managing a team of ${this.teamSize} people.`);
+            }
+        }
+
+        // Create a Manager object
+        const manager1 = new Manager("Sarah Lee", "Engineering Manager", "Engineering", 8);
+        manager1.displayInfo();
+        // Output:
+        // Name: Sarah Lee
+        // Position: Engineering Manager
+        // Department: Engineering
+        // Team Size: 8
+        manager1.manageTeam();
+        // Output:
+        // Sarah Lee is managing a team of 8 people.
+
+    </script>
+</body>
+
+</html>

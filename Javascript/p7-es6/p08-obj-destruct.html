@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        const person = {
+            name: "Alice",
+            age: 30,
+            city: "New York"
+        };
+
+        const { name, age, city } = person;
+
+        console.log(name);  // "Alice"
+        console.log(age);   // 30
+        console.log(city);  // "New York"
+        
+        //You can also rename variables:
+        const { name: fullName, age: yearsOld } = person;
+        console.log(fullName); // "Alice"
+        console.log(yearsOld); // 30
+
+    </script>
+</body>
+
+</html>

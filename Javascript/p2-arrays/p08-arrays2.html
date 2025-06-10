@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        let num = [10, 20, 30, 40, 50, 30];
+
+        // indexOf() - Returns the first index at which a given element is found or -1 if it's not found.
+        console.log("Using indexOf:", num.indexOf(30));
+
+        // lastIndexOf() - Returns the last index at which a given element is found.
+        console.log("\nUsing lastIndexOf:", num.lastIndexOf(30));
+
+        // includes() - Checks if an array contains a specific element, returns true or false.
+        console.log("\nUsing includes:", num.includes(20));
+
+        // find() - Returns the first element in the array that satisfies the provided testing function.
+        console.log("\nUsing find:", num.find(num => num > 25));
+
+        // findIndex() - Returns the index of the first element that satisfies the provided testing function.
+        console.log("\nUsing findIndex:", num.findIndex(num => num > 25));
+       
+    </script>
+</body>
+
+</html>

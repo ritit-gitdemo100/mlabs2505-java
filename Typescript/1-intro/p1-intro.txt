@@ -1,0 +1,40 @@
+Introduction
+=============
+
+Typescript is an open source, object oriented programming language.
+It is developed and maintained by Microsoft.
+It is a Strongly typed superset of Javascript, which compiles to plain javascript.
+Typescript is not directly run on a browser, It need a compiler to compile and generate Javascript file.
+
+In 2010,Anders Hejlsberg, started working on Typescript at Microsoft.
+The first version released on Oct, 2012.
+Latest version 3.5 released on May, 2019.
+
+Typescript source file is in ".ts" extension.
+Typescript uses TSC (TypeScript Compiler), which converts .ts file to .js file.
+app.ts ------> tsc app.ts ---------> app.js
+we can use any valid .js file by renaming it to .ts file.
+
+Why Typescript?
+    It is a fast, simple, and easy to learn
+    Supports Strongly typed programming
+    Supports OOP
+    Supports Reusability (Inheritance)
+    Supports all javascript libraries
+    Supports error checking at compile-time
+    Developers can save a lot of time with Typescript
+
+To Install Typescript, type the following command in cmd (after installing node.js)
+    npm install -g typescript
+To verify installation
+    tsc -v
+
+To compile and run in visual studio
+    change the terminal from powershell to cmd
+    To compile
+        tsc filename.ts
+        It produces a .js file
+    To run .js file
+        node filename.js
+
+    

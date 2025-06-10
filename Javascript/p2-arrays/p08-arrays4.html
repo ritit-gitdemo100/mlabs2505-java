@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        // Initial arrays
+        let array1 = [1, 2, 3];
+        let array2 = [4, 5, 6];
+        let nestedArray = [1, [2, 3], [4, 5], 6];
+        let doubleNestedArray = [1, [2, [3, 4]]];
+
+        console.log("Using concat:", array1.concat(array2));
+        console.log("\nUsing join:", array1.join(", "));
+
+        console.log("\nUsing flat:", nestedArray.flat());
+
+        // flatMap() - First maps each element using a mapping function, then flattens the result into a new array.
+        console.log("\nUsing flatMap:");
+        let flatMappedArray = nestedArray.flatMap(num => [num * 2]);
+        console.log(flatMappedArray);  // Output: [2, 4, 6, 8, 10, 12]
+
+        // Demonstrating flat() with a deeply nested array
+        console.log("\nFlat a deeply nested array with flat:");
+        let deeplyFlattenedArray = doubleNestedArray.flat(2); // Flattening two levels deep
+        console.log(deeplyFlattenedArray);  // Output: [1, 2, 3, 4]
+
+    </script>
+</body>
+
+</html>

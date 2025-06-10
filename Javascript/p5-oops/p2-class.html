@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        class Employee {
+            constructor(name, position, department) {
+                this.name = name;
+                this.position = position;
+                this.department = department;
+            }
+
+            displayInfo() {
+                console.log(`Name: ${this.name}`);
+                console.log(`Position: ${this.position}`);
+                console.log(`Department: ${this.department}`);
+            }
+        }
+
+        // Create a new employee object using the class
+        const employee1 = new Employee("Jane Smith", "HR Manager", "Human Resources");
+        employee1.displayInfo();
+        // Output:
+        // Name: Jane Smith
+        // Position: HR Manager
+        // Department: Human Resources
+
+    </script>
+</body>
+
+</html>

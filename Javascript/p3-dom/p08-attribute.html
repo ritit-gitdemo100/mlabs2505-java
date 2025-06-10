@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Manipulation Example</title>
+</head>
+
+<body>
+
+    <h1 id="h1" class="heading">Hello, JavaScript!</h1>
+    <p > Current Style of h1 : <span id="span"></span></p>
+    <button onclick="changeColor()">Toggle Style</button>
+
+    <script>
+        function changeColor() {
+
+            const element = document.getElementById('h1');
+
+            if (element.hasAttribute('style')) {
+                element.removeAttribute('style');
+            } else {
+                element.setAttribute('style', 'color: blue; font-size: 30px;');
+            }
+
+            const attr = element.getAttribute('style');
+            document.getElementById("span").textContent = attr;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        class Employee {
+            constructor(name, position, department) {
+                this.name = name;
+                this.position = position;
+                this.department = department;
+            }
+
+            displayInfo() {
+                console.log(`Name: ${this.name}`);
+                console.log(`Position: ${this.position}`);
+                console.log(`Department: ${this.department}`);
+            }
+        }
+
+        class Manager extends Employee {
+            constructor(name, position, department, teamSize) {
+                super(name, position, department);
+                this.teamSize = teamSize;
+            }
+
+            displayInfo() {
+                super.displayInfo(); // Call the parent class method
+                console.log(`Team Size: ${this.teamSize}`);
+            }
+        }
+
+        const employee3 = new Employee("Bob Brown", "Sales Executive", "Sales");
+        const manager2 = new Manager("Lisa Clark", "Sales Manager", "Sales", 10);
+
+        const employees = [employee3, manager2];
+
+        employees.forEach(employee => {
+            employee.displayInfo();
+            console.log("------");
+        });
+
+        // Output:
+        // Name: Bob Brown
+        // Position: Sales Executive
+        // Department: Sales
+        // ------
+        // Name: Lisa Clark
+        // Position: Sales Manager
+        // Department: Sales
+        // Team Size: 10
+
+    </script>
+</body>
+
+</html>

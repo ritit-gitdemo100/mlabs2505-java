@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+
+        // Rest Operator (...): 
+        // Collects multiple elements into an array. 
+        // It’s used in function parameters to collect 
+        // all arguments into a single array.
+        
+        function sum(...numbers) {
+            return numbers.reduce((acc, num) => acc + num, 0);
+        }
+
+        console.log(sum(1, 2, 3)); // 6
+        console.log(sum(4, 5, 6, 7, 8)); // 30
+
+    </script>
+</body>
+
+</html>

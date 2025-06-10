@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classList Methods Example</title>
+    <style>
+        .active {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="myElement">Click the buttons below to change my style!</h1>
+    <p id="msg"></p>
+    <button onclick="addClass()">Add 'active' class</button>
+    <button onclick="removeClass()">Remove 'active' class</button>
+    <button onclick="toggleClass()">Toggle 'active' class</button>
+    <button onclick="checkClass()">Check if 'active' class exists</button>
+
+    <script>
+        const element = document.getElementById('myElement');
+
+        function addClass() {
+            element.classList.add('active');
+        }
+
+        function removeClass() {
+            element.classList.remove('active');
+        }
+
+        function toggleClass() {
+            element.classList.toggle('active');
+        }
+
+        function checkClass() {
+            const msg = document.getElementById("msg");
+            if (element.classList.contains('active')) {
+                msg.textContent = 'The "active" class is present.';
+            } else {
+                msg.textContent = 'The "active" class is NOT present.';
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Attributes Example</title>
+</head>
+<body>
+
+    <h1>Input Tags with Various Attributes</h1>
+
+    <form action="#">
+        <!-- Checkbox with 'checked' Attribute -->
+        Accept Terms and Conditions: <br>
+        <input type="checkbox" checked> I agree to the terms<br><br>
+        
+        <!-- Radio Button Input with 'required' and 'checked' Attributes -->
+        Choose your favorite fruit:<br>
+        <input type="radio" name="fruit" value="Apple" > Apple<br>
+        <input type="radio" name="fruit" value="Orange" checked> Orange<br>
+        <input type="radio" name="fruit" value="Banana"> Banana<br><br>
+
+  
+        <!-- Text Input with 'required' Attribute -->
+        Text (Required):
+        <input type="text" required ><br><br>
+        
+        <!-- Text Input with 'readonly' Attribute -->
+        Readonly Input:
+        <input type="text" value="This is readonly" readonly><br><br>
+
+        <!-- Phone Input with 'pattern' Attributes -->
+        Phone Number :
+        <input type="tel" pattern="^\+91\s\d{10}$" placeholder="+91 1234567890" > <br><br>
+      
+        <!-- Number Input with 'min', 'max' and 'step' Attributes -->
+        Age (Between 18 and 100):
+        <input type="number" min="18" max="100" step="1" ><br><br>
+
+        <!-- File Input with 'disabled' Attribute -->
+        Upload a File (Disabled):
+        <input type="file" disabled><br><br>
+
+      <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

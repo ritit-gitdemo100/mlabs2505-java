@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <script>
+        // Initial array
+        let num = [10, 20, 30, 40, 50];
+
+        console.log("Using forEach:");
+        num.forEach(num => console.log(num));
+
+        console.log("\nUsing map:", num.map(num => num * 2));
+
+        console.log("\nUsing filter:", num.filter(num => num > 30));
+
+        let sum = num.reduce((acc, num) => acc + num, 0);
+        console.log("\nUsing reduce:", sum);  
+
+        console.log("\nUsing some (atleast 1):", num.some(num => num % 2 === 0));
+ 
+        console.log("\nUsing every:", num.every(num => num % 2 === 0));
+  
+        console.log("\nUsing reverse:", num.reverse());
+
+        console.log("\nUsing sort ASC:", num.sort());
+        console.log("\nUsing sort ASC:", num.sort((a, b) => a - b));
+        
+        console.log("\nUsing sort DESC:", num.sort((a, b) => b - a));
+
+        let names = ["Charles","Ebi","Abdul","David","Bala"];
+        console.log("\nUsing sort Asc:", names.sort());
+        console.log("\nUsing sort Desc:", names.sort((a, b) => b.localeCompare(a)));
+        
+
+
+    </script>
+</body>
+
+</html>

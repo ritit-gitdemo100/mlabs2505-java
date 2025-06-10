@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Universal Selector */
+        * {
+            margin:10;
+        }
+
+        /* Element/Tag/Name selector */
+        p {
+            color: red;
+        }
+
+        /* Id Selector */
+        #p1 {
+            background-color: cyan;
+        }
+        
+        /* Attribute Selector */
+        [name="art1"] {
+            background-color: rgb(131, 255, 180);
+        }
+        
+        /* Class Selector */
+        .cls1 {
+            background-color: pink;
+        }
+
+        /* Decendant Selector */
+        section p {
+            font-family: fantasy;
+        }
+
+        /* Child Selector */
+        section > p {
+            background-color: yellow;
+        }
+
+        /* Group Selector */
+        h1, #p1, .cls1, article {
+            border: 5px solid blue;
+        }
+
+        /* Pseudo class Selector */
+        p:hover{
+            padding-left: 50px;
+        }
+
+         /* Pseudo element Selector */
+         p::first-letter{
+            color:black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Selectors</h1>
+    <hr>
+    <p>Para1</p>
+    <p id="p1">Para2</p>
+    <p>Para3</p>
+    <section>
+        <p>Section Para1</p>
+        <p>Section Para2</p>
+        <article>
+            <p name="art1">Section Article Para1</p>
+        </article>
+        <p>Section Para3</p>
+    </section>
+    <p class="cls1">Para4</p>
+    <p class="cls1">Para5</p>
+</body>
+
+</html>

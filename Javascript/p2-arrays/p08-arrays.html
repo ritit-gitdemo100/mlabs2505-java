@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+  
+
+        var marks = [50, 60, 70, 80];
+        console.log(marks)
+        
+        marks.push(90,100) //End
+        console.log(marks)
+       
+        marks.unshift(30,40) //Start
+        console.log(marks)
+
+        marks.pop() //End
+        console.log(marks)
+
+        marks.shift() //Start
+        console.log(marks)
+
+        marks.splice(2,3) //removes 3 data from index 2
+        console.log(marks)
+
+        marks.splice(2,0,33,44) //adds 2 data from index 2
+        console.log(marks)
+
+        let marks2 = marks.slice(1,4) //new array from index 1 to 3
+        console.log(marks2);
+        
+    </script>
+</body>
+</html>
