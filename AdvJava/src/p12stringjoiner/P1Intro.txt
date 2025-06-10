@@ -1,0 +1,27 @@
+StringJoiner
+
+	StringJoiner is a final class added with Java 8
+	StringJoiner is used to construct a sequence of characters
+		separated by a delimiter and optionally 
+		starting with a prefix and ending with a suffix
+		
+	Syntax
+	
+	1. With delimiter
+		StringJoiner s = new StringJoiner("delimiter");
+		StringJoiner s = new stringJoiner(",");
+		
+	1. With delimiter,prefix and suffix
+		StringJoiner s = new StringJoiner("delimiter","prefix","suffix");
+		StringJoiner s = new StringJoiner("-","[","]");
+		
+		
+	Methods
+	
+		add(CharSequence)
+		merge(StringJoiner) -> without prefix and suffix
+		length()
+		setEmptyValue(CharSequence)
+		
+		
+		
