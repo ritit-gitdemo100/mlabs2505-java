@@ -6,12 +6,12 @@ public class P8SetEmpty {
 
 	public static void main(String[] args) {
 		
-		StringJoiner s = new StringJoiner(",","{","}");
+		StringJoiner s = new StringJoiner(",","select "," from student");
 		
-		s.setEmptyValue("Emp");
+		s.setEmptyValue("select * from student");
 		System.out.println(s);	
 		
-		s.add("jan");
+		s.add("name");
 		System.out.println(s);		
 		
 		s.setEmptyValue("Emp");

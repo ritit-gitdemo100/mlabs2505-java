@@ -5,11 +5,9 @@ class DVDPlayer {
 	public void on() {
 		System.out.println("DVD Player is on.");
 	}
-
 	public void play(String movie) {
 		System.out.println("Playing movie: " + movie);
 	}
-
 	public void off() {
 		System.out.println("DVD Player is off.");
 	}
@@ -19,7 +17,6 @@ class Projector {
 	public void on() {
 		System.out.println("Projector is on.");
 	}
-
 	public void off() {
 		System.out.println("Projector is off.");
 	}
@@ -29,11 +26,9 @@ class Amplifier {
 	public void on() {
 		System.out.println("Amplifier is on.");
 	}
-
 	public void setVolume(int volume) {
 		System.out.println("Setting volume to: " + volume);
 	}
-
 	public void off() {
 		System.out.println("Amplifier is off.");
 	}
@@ -59,7 +54,7 @@ class HomeTheaterFacade {
 		this.lights = lights;
 	}
 
-	public void watchMovie(String movie) {
+	public void startMovie(String movie) {
 		System.out.println("Get ready to watch a movie...");
 		lights.dim(10);
 		projector.on();
@@ -87,7 +82,7 @@ public class P6Facade {
 
 		HomeTheaterFacade homeTheater = new HomeTheaterFacade(dvdPlayer, projector, amplifier, lights);
 
-		homeTheater.watchMovie("Inception");
+		homeTheater.startMovie("Inception");
 		System.out.println();
 		homeTheater.endMovie();
 	}

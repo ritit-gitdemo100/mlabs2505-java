@@ -1,11 +1,9 @@
 package p10designpattern;
 
-//Vehicle interface
 interface Vehicle {
 	void drive();
 }
 
-//Concrete Vehicle classes
 class Car implements Vehicle {
 	@Override
 	public void drive() {
@@ -20,12 +18,10 @@ class Truck implements Vehicle {
 	}
 }
 
-//Factory interface
 interface VehicleFactory {
 	Vehicle createVehicle();
 }
 
-//Concrete Factory classes
 class CarFactory implements VehicleFactory {
 	@Override
 	public Vehicle createVehicle() {
@@ -44,12 +40,15 @@ class TruckFactory implements VehicleFactory {
 public class P3FactoryMethod {
 	public static void main(String[] args) {
 		
-		VehicleFactory carFactory = new CarFactory();
-		Vehicle car = carFactory.createVehicle();
-		car.drive();
-
-		VehicleFactory truckFactory = new TruckFactory();
-		Vehicle truck = truckFactory.createVehicle();
-		truck.drive();
+		VehicleFactory factory;
+		String vehicleType = "truck";
+		
+		if(vehicleType.equalsIgnoreCase("car"))
+			factory = new CarFactory();
+		else
+			factory = new TruckFactory();
+		
+		Vehicle vehicle = factory.createVehicle();
+		vehicle.drive();
 	}
 }

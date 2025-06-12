@@ -1,4 +1,4 @@
-package rough;
+package demo;
 
 public class Stud {
 	int roll;
