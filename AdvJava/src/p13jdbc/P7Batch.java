@@ -27,10 +27,10 @@ public class P7Batch {
             int[] results = st.executeBatch(); 
 
             con.commit();
+            con.setAutoCommit(true);
 
             for (int result : results) {
                 System.out.println("Result: " + result);
             }
-       
     }
 }

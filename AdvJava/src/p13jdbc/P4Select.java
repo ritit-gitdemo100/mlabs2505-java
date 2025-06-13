@@ -6,7 +6,7 @@ public class P4Select {
 	public static void main(String a[]) throws Exception {
 
 		
-		String url = "jdbc:mysql://localhost/jdbc_db";
+		String url = "jdbc:mysql://localhost/mlabsjava2025";
 
 		Connection con = DriverManager.getConnection(url, "root", "root");
 
