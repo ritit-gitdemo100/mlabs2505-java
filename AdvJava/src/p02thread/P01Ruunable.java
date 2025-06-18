@@ -16,5 +16,6 @@ public class P01Ruunable {
 		
 		Thread task1 = new Thread(task);
 		task1.start();
+		
 	}
 }

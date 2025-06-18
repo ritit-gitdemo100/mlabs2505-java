@@ -12,13 +12,11 @@ public class T7DisabledTest {
     @Test
     @Disabled("This test is temporarily disabled due to a known issue")
     void disabledTest1() {
-        // This test will not run
         assertEquals(10, calculator.add(5, 5), "This test should not run");
     }
     
     @Test
     void disabledTest2() {
-        // This test will not run
         assertEquals(10, calculator.add(5, 5), "This test should not run");
     }
 }

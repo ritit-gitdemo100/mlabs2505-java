@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1">
+  <tlib-version>1.0</tlib-version>
+  <jsp-version>2.0</jsp-version>
+  <short-name>custom</short-name>
+  <tag>
+      <name>greet</name>
+      <tag-class>com.rit.Greet</tag-class>
+      <body-content>empty</body-content>
+  </tag>
+</taglib>

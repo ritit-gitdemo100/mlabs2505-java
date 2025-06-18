@@ -14,7 +14,7 @@ public class T6CSVFileTest {
 	@ParameterizedTest
 	@CsvFileSource(resources = "/data.csv", numLinesToSkip=1)
 		void testAdditionWithCsvSource(int a, int b, int expected) {
-		// Use case: Test addition with CSV source data
+
 		int result = calculator.add(a, b);
 		assertEquals(expected, result, "The sum should be correct");
 	}
