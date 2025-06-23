@@ -1,0 +1,14 @@
+<label>
+    Select Role:
+    <select [(ngModel)]="userRole">
+        <option value="admin">Admin</option>
+        <option value="guest">Guest</option>
+        <option value="member">Member</option>
+    </select>
+</label>
+
+<div [ngSwitch]="userRole">
+    <p *ngSwitchCase="'admin'">You have full admin access.</p>
+    <p *ngSwitchCase="'guest'">You have guest access.</p>
+    <p *ngSwitchDefault>You have member access.</p>
+</div>

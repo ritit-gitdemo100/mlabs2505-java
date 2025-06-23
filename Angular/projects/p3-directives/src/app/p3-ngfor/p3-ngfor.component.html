@@ -1,0 +1,32 @@
+<p>p3-ngfor works!</p>
+
+<h3>User List</h3>
+
+<ul>
+    <li *ngFor="let user of users; let i = index">
+        {{ i + 1 }}. {{ user.name }}
+    </li>
+</ul>
+
+<hr>
+
+<select>
+    <option *ngFor="let user of users">
+        {{ user.name }}
+    </option>
+</select>
+
+<hr>
+
+<table border="1" width="600px">
+    <tr>
+        <th><input type="checkbox" [(ngModel)]="isChecked"></th>
+        <th>From</th>
+        <th>Subject</th>
+    </tr>
+    <tr *ngFor="let user of users; let i = index">
+        <td><input type="checkbox" [checked]="isChecked"></td>
+        <td>{{ user.name }}</td>
+        <td>subject-{{ i + 1 }} from {{user.name}}</td>
+    </tr>
+</table>

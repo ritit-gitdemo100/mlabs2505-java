@@ -1,0 +1,30 @@
+<hr>
+<p>p2-interpolation works!</p>
+
+<!-- Interpolating a simple variable -->
+<h1>{{ title }}</h1>
+
+<!-- Interpolating a variable with a JS function-->
+<p>Hello, {{ userName.toUpperCase() }}!</p>
+
+<!-- Interpolating a number -->
+<p>Your age: {{ age }}</p>
+
+<!-- Interpolating an expression -->
+<p>Next year you will be: {{ age + 1 }}</p>
+
+<!-- Interpolating an array value -->
+<p>Your first skill is: {{ skills[0] }}</p>
+
+<!-- Interpolating object property -->
+<p>Email: {{ user.email }}</p>
+
+<!-- Interpolating a method result -->
+<p>Full Name: {{ getFullName() }}</p>
+<p>Current Year: {{ getCurrentYear() }}</p>
+
+<!-- Escaping HTML content -->
+<p>This will be escaped: {{ rawHtml }}</p>
+
+<!-- Rendering HTML safely -->
+<p>This will render HTML: <span [innerHTML]="rawHtml"></span></p>

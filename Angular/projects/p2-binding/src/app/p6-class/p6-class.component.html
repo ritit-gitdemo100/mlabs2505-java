@@ -1,0 +1,11 @@
+<p>p6-class works!</p>
+
+<button [class.active]="isActive" (click)="toggleActive()">
+    Toggle Active ({{ isActive }})
+</button>
+
+<p [ngClass]="{ highlight: isActive, error: hasError }">
+    This paragraph changes class based on states.
+</p>
+
+<button (click)="toggleError()">Toggle Error</button>

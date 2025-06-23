@@ -1,0 +1,33 @@
+<p>p10-new works!</p>
+
+@if (fruits.length > 0) {
+<p>We have {{fruits.length}} fruits</p>
+} @else {
+<p>No fruits found</p>
+}
+
+<hr>
+
+
+<select [(ngModel)]="selectedFruit">
+    @for (fruit of fruits; track fruit) {
+        <option [value]="fruit">{{ fruit }}</option>
+    }
+</select>
+
+<!-- track: If the order changes or a new fruit is added, 
+ Angular only updates what changed and not the whole list -->
+
+<h3>Selected Fruit: {{ selectedFruit }}</h3>
+
+@switch (selectedFruit) {
+    @case ('Apple') {
+     <p>An apple a day keeps the doctor away.</p>
+    }
+    @case ('Banana') {
+     <p>Power up with a banana — the original energy bar.</p>
+    }
+    @default {
+     <p>The king of fruits — sweet, juicy, and rich in vitamins.</p>
+    }
+}
