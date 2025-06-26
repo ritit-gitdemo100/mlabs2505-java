@@ -10,9 +10,9 @@ import jakarta.persistence.Table;
 public class Employee {
 	@Id
 	int empId;
+	
 	String empName;
 	
-	@Column(name="dept")
 	String department;
 	
 	String designation;

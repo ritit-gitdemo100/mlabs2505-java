@@ -13,7 +13,7 @@
       
       
       <!-- List of XML mapping files -->
-      <mapping class="com.ey.Employee" />
-      <mapping class="com.ey.Address" />
+      <mapping class="com.marlabs.Employee" />
+      <mapping class="com.marlabs.Address" />
    </session-factory>
 </hibernate-configuration>

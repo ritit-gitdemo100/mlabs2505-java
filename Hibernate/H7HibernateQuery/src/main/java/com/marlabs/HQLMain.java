@@ -24,22 +24,22 @@ public class HQLMain {
 		Query<Employee> qry = null;
 		
 		System.out.println("\nHibernate Query Language (HQL)");
-		qry = session.createQuery("From Employee");
+		qry = session.createQuery("From Employee", Employee.class);
 		qry.list().forEach(System.out::println);
 
 		System.out.println("\nHQL with Positional parameter");
-		qry = session.createQuery("From Employee where department=?1");
-		qry.setParameter(1, "Sales");
+		qry = session.createQuery("From Employee where department=?1", Employee.class);
+		qry.setParameter(1, "Marketing");
 		qry.list().forEach(System.out::println);
 		
 		
 		System.out.println("\nHQL with named parameters");
-		qry = session.createQuery("From Employee where designation=:desig ");
+		qry = session.createQuery("From Employee where designation=:desig ", Employee.class);
 		qry.setParameter("desig", "Manager");
 		qry.list().forEach(System.out::println);
 
 		System.out.println("\nNative SQL Query");
-		String nqry = "select * from h1_employee";
+		String nqry = "select * from h1_employee were empName like 'V%'";
 		NativeQuery<Employee> emps = session.createNativeQuery(nqry, Employee.class);
 		emps.list().forEach(System.out::println);
 		

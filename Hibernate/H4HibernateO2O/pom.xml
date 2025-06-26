@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-3.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.marlabs</groupId>
-	<artifactId>H3HibernateAnnot</artifactId>
+	<artifactId>H4HibernateO2O</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->

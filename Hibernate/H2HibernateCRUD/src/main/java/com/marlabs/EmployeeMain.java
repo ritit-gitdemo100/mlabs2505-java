@@ -10,18 +10,18 @@ public class EmployeeMain {
 		String response = null;
 		EmployeeDAO dao = new EmployeeDAO();
 		
-//		Employee emp = new Employee(103,"Vineeth","Manager","Analytics");
+//		Employee emp = new Employee(102,"Manoj","Manager","Analytics");
 //		response = dao.insertEmployee(emp);
 //		System.out.println(response);
 		
-//		Employee emp = new Employee(103,"Manish","Manager", "Accounts");
+//		Employee emp = new Employee(102,"Manish","Manager", "Accounts");
 //		response = dao.updateEmployee(emp);
 //		System.out.println(response);
 	
-//		Employee emp = dao.getEmployee(103);
+//		Employee emp = dao.getEmployee(102);
 //		System.out.println(emp);
 
-		response = dao.deleteEmployee(103);
+		response = dao.deleteEmployee(102);
 		System.out.println(response);
 	}
 }

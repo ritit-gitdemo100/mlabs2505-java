@@ -11,6 +11,7 @@
 
 		<property name="hibernate.show_sql">true</property>
 		<property name="hbm2ddl.auto">update</property>
+		
 		<!-- List of XML mapping files -->
 		<mapping resource="employee.hbm.xml" />
 	</session-factory>

@@ -23,9 +23,9 @@ public class EmployeeMain {
 //		System.out.println(emp.getAddress());
 
 		
-		Employee emp = session.get(Employee.class, 1);
-		if(emp != null)
-			session.remove(emp);
+//		Employee emp = session.get(Employee.class, 1);
+//		if(emp != null)
+//			session.remove(emp);
 				
 		tx.commit();
 		session.close();

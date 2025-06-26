@@ -31,20 +31,13 @@ public class Address {
 		this.state = state;
 		this.pincode = pincode;
 	}
-	public Address( String city, String state, int pincode, Employee employee) {
-		super();
-		this.city = city;
-		this.state = state;
-		this.pincode = pincode;
-		this.employee = employee;
-	}
-	public Address(int addressId, String city, String state, int pincode, Employee employee) {
+
+	public Address(int addressId, String city, String state, int pincode) {
 		super();
 		this.addressId = addressId;
 		this.city = city;
 		this.state = state;
 		this.pincode = pincode;
-		this.employee = employee;
 	}
 
 	public int getAddressId() {
@@ -79,13 +72,6 @@ public class Address {
 		this.pincode = pincode;
 	}
 
-	public Employee getEmployee() {
-		return employee;
-	}
-
-	public void setEmployee(Employee employee) {
-		this.employee = employee;
-	}
 
 	@Override
 	public String toString() {

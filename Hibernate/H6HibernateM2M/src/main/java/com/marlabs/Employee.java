@@ -25,7 +25,7 @@ public class Employee {
 	String email;
 	String phone;
 	
-	@ManyToMany( cascade= {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.DETACH,	CascadeType.REFRESH})
+	@ManyToMany( cascade= {CascadeType.PERSIST,CascadeType.MERGE,CascadeType.DETACH,CascadeType.REFRESH})
 	@JoinTable(name="emp_project",
 	joinColumns=@JoinColumn(name="empid"),
 	inverseJoinColumns=@JoinColumn(name="prjid"))
