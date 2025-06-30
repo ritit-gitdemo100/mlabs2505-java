@@ -13,8 +13,8 @@ public class MainDemo {
 		Vehicle v2 = context.getBean("myvehicle", Vehicle.class);
 		
 		System.out.println("Are Same Objects : "+(v1 == v2));
-		System.out.println("v1 memory loaction : "+v1);
-		System.out.println("v2 memory loaction : "+v2);
+		System.out.println("v1  : "+v1);
+		System.out.println("v2  : "+v2);
 
 		context.close();
 	}

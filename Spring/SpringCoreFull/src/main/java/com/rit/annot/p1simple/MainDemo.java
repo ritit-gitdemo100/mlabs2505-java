@@ -8,14 +8,10 @@ public class MainDemo {
 
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("p8annotation.xml");
 		
-		Vehicle vehicle1 = context.getBean("employeeService", Vehicle.class);
-		Vehicle vehicle2 = context.getBean("bicycle", Vehicle.class);
+		Vehicle vehicle = context.getBean("bicycle", Vehicle.class);
 		
-		System.out.println(vehicle1);
-		System.out.println(vehicle1);
-		System.out.println(vehicle1==vehicle2);
+		System.out.println(vehicle.getVehicle());
 
-		context.close();
 	}
 
 }

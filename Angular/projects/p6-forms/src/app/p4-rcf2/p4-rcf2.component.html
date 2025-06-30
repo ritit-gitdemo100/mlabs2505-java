@@ -1,0 +1,54 @@
+<h2>Advanced Registration Form (Reactive)</h2>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()" novalidate>
+
+  <label for="name">Name:</label>
+  <input id="name" type="text" formControlName="name" />
+  <div *ngIf="name.invalid && name.touched" class="error">
+    <small *ngIf="name.errors?.['required']">Name is required.</small>
+    <small *ngIf="name.errors?.['minlength']">Name must be at least 3 characters.</small>
+    <small *ngIf="name.errors?.['maxlength']">Name cannot exceed 30 characters.</small>
+  </div>
+
+  <br />
+
+  <label for="email">Email:</label>
+  <input id="email" type="email" formControlName="email" />
+  <div *ngIf="email.invalid && email.touched" class="error">
+    <small *ngIf="email.errors?.['required']">Email is required.</small>
+    <small *ngIf="email.errors?.['email']">Invalid email format.</small>
+  </div>
+
+  <br />
+
+  <label for="password">Password:</label>
+  <input id="password" type="password" formControlName="password" />
+  <div *ngIf="password.invalid && password.touched" class="error">
+    <small *ngIf="password.errors?.['required']">Password is required.</small>
+    <small *ngIf="password.errors?.['minlength']">Password must be at least 6 characters.</small>
+  </div>
+
+  <br />
+
+  <label for="confirmPassword">Confirm Password:</label>
+  <input id="confirmPassword" type="password" formControlName="confirmPassword" />
+  <div *ngIf="(confirmPassword.touched || userForm.touched) && (confirmPassword.invalid || userForm.errors?.['passwordsMismatch'])" class="error">
+    <small *ngIf="confirmPassword.errors?.['required']">Confirm Password is required.</small>
+    <small *ngIf="userForm.errors?.['passwordsMismatch']">Passwords do not match.</small>
+  </div>
+
+  <br />
+
+  <label for="age">Age:</label>
+  <input id="age" type="number" formControlName="age" />
+  <div *ngIf="age.invalid && age.touched" class="error">
+    <small *ngIf="age.errors?.['required']">Age is required.</small>
+    <small *ngIf="age.errors?.['min']">Must be at least 18 years old.</small>
+    <small *ngIf="age.errors?.['max']">Age cannot exceed 65 years.</small>
+  </div>
+
+  <br />
+
+  <button type="submit" [disabled]="userForm.invalid">Register</button>
+
+</form>

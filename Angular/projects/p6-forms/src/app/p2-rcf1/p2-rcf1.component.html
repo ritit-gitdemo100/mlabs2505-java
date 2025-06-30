@@ -1,0 +1,24 @@
+<h2>Simple Registration Form (Reactive)</h2>
+
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()" novalidate>
+
+  Name :
+  <input type="text" formControlName="name" />
+  <span *ngIf="userForm.get('name')?.invalid && userForm.get('name')?.touched">
+    Name is required.
+  </span>
+
+  <br>
+
+  Email :
+  <input type="email" formControlName="email" />
+  <span *ngIf="userForm.get('email')?.invalid && userForm.get('email')?.touched">
+    <span *ngIf="userForm.get('email')?.errors?.['required']">Email is required.</span>
+    <span *ngIf="userForm.get('email')?.errors?.['email']">Invalid email format.</span>
+  </span>
+
+  <br>
+
+  <button type="submit" [disabled]="userForm.invalid">Submit</button>
+
+</form>

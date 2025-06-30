@@ -1,0 +1,23 @@
+<h2>Simple Registration Form</h2>
+
+<form #userForm="ngForm" (ngSubmit)="onSubmit()" novalidate>
+
+    Name : <input type="text" name="name" [(ngModel)]="user.name" required #name="ngModel" />
+    <span *ngIf="name.invalid && name.touched">
+        Name is required.
+    </span>
+
+    <br>
+
+    Email : <input type="email" name="email" [(ngModel)]="user.email" required email #email="ngModel" />
+    <span *ngIf="email.invalid && email.touched">
+        <span *ngIf="email.errors?.['required']">Email is required.</span>
+        <span *ngIf="email.errors?.['email']">Invalid email format.</span>
+    </span>
+
+    <br>
+
+    <button type="submit" [disabled]="userForm.invalid">
+        Submit
+    </button>
+</form>

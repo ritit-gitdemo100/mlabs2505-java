@@ -8,10 +8,10 @@
     http://www.springframework.org/schema/context 
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-<!--  	<context:component-scan base-package="com.rit.annot.p1simple" /> 
- -->
+<!--  	<context:component-scan base-package="com.rit.annot.p1simple" /> --> 
 
-<!-- 	<context:component-scan base-package="com.rit.annot.p2dicons" /> -->
+
+	<context:component-scan base-package="com.rit.annot.p2dicons" />
 	
 <!-- 	<context:component-scan base-package="com.rit.annot.p3disetter" /> -->
 	
@@ -19,7 +19,7 @@
 
 <!-- 	<context:component-scan base-package="com.rit.annot.p5difield" /> -->
 
-	<context:component-scan base-package="com.rit.annot.p6diqualifier" />
+<!-- 	<context:component-scan base-package="com.rit.annot.p6diqualifier" /> -->
 
 <!-- 	<context:component-scan base-package="com.rit.annot.p7scope" /> -->
 
