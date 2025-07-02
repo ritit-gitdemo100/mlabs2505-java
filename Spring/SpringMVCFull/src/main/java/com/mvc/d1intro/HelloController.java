@@ -13,7 +13,7 @@ public class HelloController {
 		return "home";
 	}
 
-	@RequestMapping("/utkarsh")
+	@RequestMapping("/first")
 	public String firstPage()
 	{
 		return "first";
@@ -24,7 +24,7 @@ public class HelloController {
 	public ModelAndView secondPage()
 	{
 		ModelAndView mv= new ModelAndView("abc");
-		mv.addObject("msg", "Wipro Tech");
+		mv.addObject("msg", "Marlabs");
 		
 		return mv;
 	}

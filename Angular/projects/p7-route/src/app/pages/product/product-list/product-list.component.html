@@ -1,0 +1,7 @@
+<p>product-list works!</p>
+<ul>
+    <li *ngFor="let product of products">
+        {{product.name}} 
+        <button (click)="goToProduct(product.id)">Details</button>
+    </li>
+</ul>

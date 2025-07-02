@@ -11,7 +11,7 @@
 	<hr>
 	First Number : ${param.num1} <br>
 	Second Number : ${param.num2} <br>
-	Sum : ${res} <br>
+	Result : ${res} <br>
 	
 </body>
 </html>
