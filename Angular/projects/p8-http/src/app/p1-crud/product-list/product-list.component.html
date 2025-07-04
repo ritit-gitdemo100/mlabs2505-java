@@ -1,0 +1,9 @@
+<h2>Products</h2>
+<button routerLink="/products/new">Add Product</button>
+<ul>
+  <li *ngFor="let product of products">
+    {{ product.name }} - {{ product.price | currency }}
+    <button [routerLink]="['/products', product.id, 'edit']">Edit</button>
+    <button (click)="deleteProduct(product.id)">Delete</button>
+  </li>
+</ul> 

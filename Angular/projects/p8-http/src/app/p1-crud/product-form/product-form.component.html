@@ -1,0 +1,13 @@
+<h2>{{ isEditMode ? 'Edit' : 'Add' }} Product</h2>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label>
+    Name:
+    <input formControlName="name" />
+  </label>
+  <label>
+    Price:
+    <input type="number" formControlName="price" />
+  </label>
+  <button type="submit">Save</button>
+  <button routerLink="/products">Cancel</button>
+</form>
