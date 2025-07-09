@@ -1,0 +1,10 @@
+<p>p1-userform works!</p>
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <label>
+        Name: <input formControlName="name" />
+    </label>
+    <label>
+        Email: <input formControlName="email" />
+    </label>
+    <button type="submit">Submit</button>
+</form>
