@@ -1,0 +1,19 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 1033168575204-mn3k0hbg684ucim3g8o13t56uq4adu0p.apps.googleusercontent.com
+            client-secret: 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
+            scope: profile, email
+            authorization-grant-type: authorization_code
+            redirect-uri: "http://localhost:8080/login/oauth2/code/google"
+            client-name: Google
+#            login-page: /login
+        provider:
+          google:
+            authorization-uri: https://accounts.google.com/o/oauth2/auth
+            token-uri: https://oauth2.googleapis.com/token
+            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+            user-name-attribute: sub        
