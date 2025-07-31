@@ -1,2 +1,2 @@
-Hello, Welcome to Java File Handling
-Appended text.
+Hello
+ Welcome to Java File Handling

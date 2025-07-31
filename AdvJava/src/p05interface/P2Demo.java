@@ -1,6 +1,5 @@
 package p05interface;
 
-
 interface IDemo2 {
 	void greet();
 	
@@ -9,14 +8,12 @@ interface IDemo2 {
 	}
 }
 
-
 class CDemo2 implements IDemo2 {
 	@Override
 	public void greet() {
 		System.out.println("Greetings");
 	}
 }
-
 
 public class P2Demo {
 	public static void main(String[] args) {
